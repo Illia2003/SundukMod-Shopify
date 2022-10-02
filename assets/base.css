@@ -1,6 +1,7 @@
 body {
   background-color: #f2f2f2;
   min-width: 360px;
+  font-family: Montserrat;
 }
 
 .section__container {
@@ -16,4 +17,8 @@ body {
 
 .section__wrapper--justify--between {
   justify-content: space-between;
+}
+
+.link {
+  font-family: Montserrat;
 }

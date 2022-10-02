@@ -45,6 +45,24 @@
         "id": "heading_6",
         "label": "Heading 6",
         "default": "montserrat_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "button",
+        "label": "Button",
+        "default": "montserrat_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "text",
+        "label": "Text",
+        "default": "montserrat_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "link",
+        "label": "Link",
+        "default": "montserrat_n4"
       }
     ]
   }

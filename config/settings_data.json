@@ -1,6 +1,13 @@
 {
   "current": "Default",
   "presets": {
-    "Default": {}
+    "Default": {
+      "heading_1": "playfair_display_n4",
+      "heading_2": "playfair_display_n4",
+      "heading_3": "playfair_display_n4",
+      "heading_4": "playfair_display_n4",
+      "heading_5": "montserrat_n4",
+      "heading_6": "montserrat_n4"
+    }
   }
 }
