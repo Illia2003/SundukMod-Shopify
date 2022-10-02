@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f2f2f2;
   min-width: 360px;
@@ -19,8 +27,44 @@ body {
   justify-content: space-between;
 }
 
-.link,
-a,
-p {
-  font-family: Montserrat;
+a {
+  text-decoration: none;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #081226;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: -4px;
+  height: 1px;
+  background-color: #081226;
+  transition: all 0.3s linear;
+}
+
+.link:hover::after {
+  width: 0px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list--horizontal .list__item {
+  display: inline-block;
 }

@@ -2,8 +2,64 @@
   width: 100%;
 }
 
+.header__wrapper {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 .header__right,
 .header__left {
   display: flex;
   align-items: center;
+}
+
+.header__right {
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+.header__right .header__logo {
+  margin-left: 46px;
+  width: 112px;
+  height: 55px;
+}
+
+.header__left {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__left .header__lang {
+  margin-right: 64px;
+}
+
+.header__left .header__lang .list__item + .list__item {
+  margin-left: 16px;
+}
+
+.header__left .header__search {
+  max-width: 440px;
+  width: 100%;
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #081226;
+  margin-right: 40px;
+}
+
+.header__left .header__search::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  right: 0;
+  left: 0;
+  bottom: -4px;
+  background-color: #081226;
 }

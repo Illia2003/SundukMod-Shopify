@@ -21,15 +21,13 @@
         <div class="header__menu-button link">
           Меню
         </div>
-        <div class="header__logo">
-          {{ section.settings.header_logo | image_url: width: 112 | image_tag: height: 55 }}
-        </div>
+        {% render "header-logo" %}
       </div>
       <div class="header__left">
         <div class="header__search">
           <p>Поиск</p>
         </div>
-        <ul class="header__lang list menu">
+        <ul class="header__lang list list--horizontal menu">
           <li class="list__item"><a href="/" class="link list__link">УКР</a></li>
           <li class="list__item"><a href="/ru" class="link list__link">РУС</a></li>
           <li class="list__item"><a href="/en" class="link list__link">ENG</a></li>
