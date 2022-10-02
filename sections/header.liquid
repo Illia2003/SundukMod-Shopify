@@ -1,3 +1,17 @@
+{% schema %}
+{
+  "name": "Header",
+  "templates": ["index"],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_logo",
+      "label": "Header Logo"
+    }
+  ]
+}
+{% endschema %}
+
 <link rel="stylesheet" href="{{ 'header.css' | asset_url }}">
 
 <header class="header section">
@@ -8,7 +22,7 @@
           Меню
         </div>
         <div class="header__logo">
-          SundukMod
+          {{ settings.header_logo }}
         </div>
       </div>
       <div class="header__left">

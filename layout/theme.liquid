@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +7,29 @@
 
     {% style %}
 
-    {{ settings.heading_1 | font_face: font_display: 'swap' }}
-    {{ settings.heading_2 | font_face: font_display: 'swap' }}
-    {{ settings.heading_3 | font_face: font_display: 'swap' }}
-    {{ settings.heading_4 | font_face: font_display: 'swap' }}
-    {{ settings.heading_5 | font_face: font_display: 'swap' }}
-    {{ settings.heading_6 | font_face: font_display: 'swap' }}
+    @font-face {
+      font-family: "Playfair Display";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("{{ 'PlayfairDisplay-Regular.woff2' | asset_url }}") format("woff2"),
+      url("{{ 'PlayfairDisplay-Regular.woff' | asset_url }}") format("woff"),
+      url("{{ 'PlayfairDisplay-Regular.eot' | asset_url }}") format("embedded-opentype"),
+      url("{{ 'PlayfairDisplay-Regular.otf' | asset_url }}") format("opentype"),
+      url("{{ 'PlayfairDisplay-Regular.ttf' | asset_url }}") format("truetype");
+    }
 
-    {{ settings.button | font_face: font_display: 'swap' }}
-    {{ settings.text | font_face: font_display: 'swap' }}
-    {{ settings.link | font_face: font_display: 'swap' }}
-
+    @font-face {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("{{ 'Montserrat-Regular.woff2' | asset_url }}") format("woff2"),
+      url("{{ 'Montserrat-Regular.woff' | asset_url }}") format("woff"),
+      url("{{ 'Montserrat-Regular.eot' | asset_url }}") format("embedded-opentype"),
+      url("{{ 'Montserrat-Regular.otf' | asset_url }}") format("opentype"),
+      url("{{ 'Montserrat-Regular.ttf' | asset_url }}") format("truetype");
+    }
     {% endstyle %}
 
     <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">

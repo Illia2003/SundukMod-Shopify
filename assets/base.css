@@ -19,6 +19,8 @@ body {
   justify-content: space-between;
 }
 
-.link {
+.link,
+a,
+p {
   font-family: Montserrat;
 }

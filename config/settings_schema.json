@@ -12,56 +12,14 @@
     "settings": [
       {
         "type": "font_picker",
-        "id": "heading_1",
-        "label": "Heading 1",
+        "id": "main_font",
+        "label": "Main Font",
         "default": "playfair_display_n4"
       },
       {
         "type": "font_picker",
-        "id": "heading_2",
-        "label": "Heading 2",
-        "default": "playfair_display_n4"
-      },
-      {
-        "type": "font_picker",
-        "id": "heading_3",
-        "label": "Heading 3",
-        "default": "playfair_display_n4"
-      },
-      {
-        "type": "font_picker",
-        "id": "heading_4",
-        "label": "Heading 4",
-        "default": "playfair_display_n4"
-      },
-      {
-        "type": "font_picker",
-        "id": "heading_5",
-        "label": "Heading 5",
-        "default": "montserrat_n4"
-      },
-      {
-        "type": "font_picker",
-        "id": "heading_6",
-        "label": "Heading 6",
-        "default": "montserrat_n4"
-      },
-      {
-        "type": "font_picker",
-        "id": "button",
-        "label": "Button",
-        "default": "montserrat_n4"
-      },
-      {
-        "type": "font_picker",
-        "id": "text",
-        "label": "Text",
-        "default": "montserrat_n4"
-      },
-      {
-        "type": "font_picker",
-        "id": "link",
-        "label": "Link",
+        "id": "secondary_font",
+        "label": "Secondary Font",
         "default": "montserrat_n4"
       }
     ]
