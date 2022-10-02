@@ -1,5 +1,28 @@
 {
-  "current": "Default",
+  "current": {
+    "heading_1": "playfair_display_n4",
+    "heading_2": "playfair_display_n4",
+    "heading_3": "playfair_display_n4",
+    "heading_4": "playfair_display_n4",
+    "heading_5": "montserrat_n4",
+    "heading_6": "montserrat_n4",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "header_logo": "shopify:\/\/shop_images\/Logo.png"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
     "Default": {
       "heading_1": "playfair_display_n4",
