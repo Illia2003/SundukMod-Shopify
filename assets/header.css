@@ -1,0 +1,9 @@
+.header {
+  width: 100%;
+}
+
+.header__right,
+.header__left {
+  display: flex;
+  align-items: center;
+}
