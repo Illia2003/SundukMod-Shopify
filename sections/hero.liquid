@@ -39,12 +39,18 @@
   }
 {% endschema %}
 
-<section class="hero hero--home section">
-  <div class="hero__container section__container hero__container--home">
-    <div class="hero__wrapper section__wrapper hero__wrapper--home">
+<section class="hero section">
+  <div class="hero__container section__container">
+    <div class="hero__wrapper section__wrapper">
       <div class="hero__top">
+        <h1 class="heading-1">
+          <span>{{ section.settings.title_line_1 }}</span>
+          <span>{{ section.settings.title_line_2 }}</span>
+          <span>{{ section.settings.title_line_3 }}</span>
+        </h1>
       </div>
       <div class="hero__bottom">
+        {{ section.settings.image | image_url | image_tag }}
       </div>
     </div>
   </div>
