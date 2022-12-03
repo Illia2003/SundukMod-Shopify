@@ -1,11 +1,20 @@
 {
-  "name": "Home Page Template",
   "layout": "theme",
   "wrapper": "main",
   "sections": {
     "hero": {
-      "type": "hero"
+      "type": "hero",
+      "settings": {
+        "title_line_1": "Комфорт",
+        "title_line_2": "для вашых",
+        "title_line_3": "пузожителей",
+        "image": "shopify:\/\/shop_images\/Rectangle_3.png",
+        "button_page": "",
+        "button_text": ""
+      }
     }
   },
-  "order": ["hero"]
+  "order": [
+    "hero"
+  ]
 }
