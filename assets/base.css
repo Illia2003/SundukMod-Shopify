@@ -87,6 +87,8 @@ img {
   line-height: 110.69%;
   text-transform: uppercase;
   color: #081226;
+
+  margin: 0;
 }
 
 .heading-1 .accent {
