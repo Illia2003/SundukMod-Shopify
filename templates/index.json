@@ -4,7 +4,7 @@
   "wrapper": "main",
   "sections": {
     "hero": {
-      "type": "hero-home"
+      "type": "hero"
     }
   },
   "order": ["hero"]
