@@ -1,9 +1,11 @@
 .hero__container--home {
   max-width: none;
+  padding: 0;
 }
 
 .hero .hero__top {
   max-width: 1400px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
   margin-bottom: 18px;

@@ -77,3 +77,18 @@ img {
   display: block;
   object-fit: cover;
 }
+
+/************ Typography ***************/
+.heading-1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 110.69%;
+  text-transform: uppercase;
+  color: #081226;
+}
+
+.heading-1 .accent {
+  color: #d9797a;
+}
