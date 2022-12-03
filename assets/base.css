@@ -23,6 +23,10 @@ body {
   width: 100%;
 }
 
+.section__wrapper--column {
+  flex-direction: column;
+}
+
 .section__wrapper--justify--between {
   justify-content: space-between;
 }
@@ -67,4 +71,9 @@ a {
 
 .list--horizontal .list__item {
   display: inline-block;
+}
+
+img {
+  display: block;
+  object-fit: cover;
 }
