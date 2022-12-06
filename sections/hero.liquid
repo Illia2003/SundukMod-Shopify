@@ -43,7 +43,9 @@
 text : {{ section.settings.button_text }}, page : {{ section.settings.button_page }}
 {% endcapture %}
 
-{% assign button_data = button_data | split : ',' %}
+{% comment %} {% assign button_data = button_data | split : ',' %} {% endcomment %}
+
+{{ button_data }}
 
 <link rel="stylesheet" href="{{ 'hero.css' | asset_url }}">
 
