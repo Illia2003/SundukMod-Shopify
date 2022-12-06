@@ -57,7 +57,7 @@ text : {{ section.settings.button_text }}, page : {{ section.settings.button_pag
           <span>{{ section.settings.title_line_3 }}</span>
         </h1>
         <div class="hero__button">
-          {{ button_data.text }}
+          {{ button_data[0] }}
           {% render "button-main-big" with button_data %}
         </div>
       </div>
