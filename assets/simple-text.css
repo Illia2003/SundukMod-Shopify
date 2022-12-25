@@ -1,4 +1,10 @@
+.simple-text .simple-text__wrapper {
+  padding: 0px 138px;
+}
+
 .simple-text .simple-text__image {
+  position: relative;
+
   -webkit-mask-image: url(./Mask.svg);
   mask-image: url(./Mask.svg);
 
@@ -7,4 +13,24 @@
 
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+
+  width: 546px;
+  height: 546px;
+}
+
+.simple-text .simple-text__image img {
+  position: absolute;
+
+  top: -72px;
+  left: -64px;
+}
+
+.simple-text .simple-text__content {
+  margin-left: 24px;
+}
+
+.simple-text .simple-text__content .heading-5 {
+  text-transform: uppercase;
+
+  text-indent: 122px;
 }
