@@ -22,9 +22,11 @@
 <div class="simple-text__container section__container">
   <div class="simple-text__wrapper section__wrapper">
     <div class="simple-text__image">
-      {% if section.settings.image %}
-        {{ section.settings.image | image_url: height: 546 | image_tag: loading: 'lazy', widths: "546, 360" }}
-      {% endif %}
+      <div class="image-mask">
+        {% if section.settings.image %}
+          {{ section.settings.image | image_url: height: 546 | image_tag: loading: 'lazy', widths: "546, 360" }}
+        {% endif %}
+      </div>
     </div>
     <div class="simple-text__content heading-5">
       {{ section.settings.text }}

@@ -5,6 +5,11 @@
 .simple-text .simple-text__image {
   position: relative;
 
+  width: 546px;
+  height: 546px;
+}
+
+.simple-text .simple-text__image .image-mask {
   -webkit-mask-image: url(./Mask.svg);
   mask-image: url(./Mask.svg);
 
@@ -16,10 +21,8 @@
 
   width: 546px;
   height: 546px;
-}
 
-.simple-text .simple-text__image img {
-  position: absolute;
+  position: relative;
 
   top: -72px;
   left: -64px;
