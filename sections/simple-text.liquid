@@ -23,7 +23,7 @@
   <div class="simple-text__wrapper section__wrapper">
     <div class="simple-text__image">
       {% if section.settings.image %}
-        {{ section.settings.image | image_url: width: 560, height: 560 | image_tag }}
+        {{ section.settings.image | image_url: width: 560, height: 560, crop: "top" | image_tag }}
       {% endif %}
     </div>
     <div class="simple-text__content heading-5">
