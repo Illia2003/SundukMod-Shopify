@@ -1,34 +1,33 @@
 {% schema %}
-{
+  {
     "name": "Simple Text Block",
-    "tag" : "section",
-    "class" : "simple-text section",
-    "settings" : [
-        {
-            "type": "text",
-            "id": "text",
-            "label": "Text"
-        },
-        {
-            "type": "image_picker",
-            "id" : "image",
-            "label": "image"
-        }   
+    "tag": "section",
+    "class": "simple-text section",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "image"
+      }
     ]
-}
+  }
 {% endschema %}
 
 <link href="{{ 'simple-text.css' | asset_url }}" rel="stylesheet">
 
 <div class="simple-text__container section__container">
-    <div class="simple-text__wrapper section__wrapper">
-        <div class="simple-text__image">
-            {% if section.settings.image %}
-                {{ section.settings.image | image_url: width: 560, height: 560 | image_tag }}
-            {% endif %}
-        </div>
-        <div class="simple-text__content heading-5">
-            {{ section.settings.text }}
-        </div>
+  <div class="simple-text__wrapper section__wrapper">
+    <div class="simple-text__image">
+      {% if section.settings.image %}
+        {{ section.settings.image | image_url: width: 560, height: 560 | image_tag }}
+      {% endif %}
     </div>
+    <div class="simple-text__content heading-5">
+      {{ section.settings.text }}
+    </div>
+  </div>
 </div>
