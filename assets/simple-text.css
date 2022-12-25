@@ -5,6 +5,8 @@
 .simple-text .simple-text__image {
   position: relative;
 
+  flex-shrink: 0;
+
   width: 546px;
 }
 
@@ -34,5 +36,8 @@
 .simple-text .simple-text__content .heading-5 {
   text-transform: uppercase;
 
+  flex-shrink: 1;
+
+  text-align: unset;
   text-indent: 122px;
 }
