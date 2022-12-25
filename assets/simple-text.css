@@ -1,0 +1,10 @@
+.simple-text .simple-text__image {
+  -webkit-mask-image: url(./Mask.svg);
+  mask-image: url(./Mask.svg);
+
+  -webkit-mask-size: 560px 560px;
+  mask-size: 560px 560px;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
