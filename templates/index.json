@@ -8,15 +8,21 @@
         "title_line_1": "Комфорт",
         "title_line_2": "для вашых",
         "title_line_3": "пузожителей",
-        "image": "shopify://shop_images/Rectangle_3.png",
+        "image": "shopify:\/\/shop_images\/Rectangle_3.png",
         "button_page": "#",
         "button_text": "Начать шопинг"
       }
     },
     "simple-text": {
       "type": "simple-text",
-      "settings": {}
+      "settings": {
+        "text": "SundukMod — Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "image": "shopify:\/\/shop_images\/Rectangle_6.jpg"
+      }
     }
   },
-  "order": ["hero", "simple-text"]
+  "order": [
+    "hero",
+    "simple-text"
+  ]
 }
