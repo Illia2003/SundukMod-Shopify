@@ -1,12 +1,11 @@
 .simple-text .simple-text__wrapper {
-  padding: 0px 138px;
+  padding: 138px 0px;
 }
 
 .simple-text .simple-text__image {
   position: relative;
 
   width: 546px;
-  height: 546px;
 }
 
 .simple-text .simple-text__image .image-mask {
