@@ -8,13 +8,15 @@
         "title_line_1": "Комфорт",
         "title_line_2": "для вашых",
         "title_line_3": "пузожителей",
-        "image": "shopify:\/\/shop_images\/Rectangle_3.png",
-        "button_page": "",
+        "image": "shopify://shop_images/Rectangle_3.png",
+        "button_page": "#",
         "button_text": "Начать шопинг"
       }
+    },
+    "simple-text": {
+      "type": "simple-text",
+      "settings": {}
     }
   },
-  "order": [
-    "hero"
-  ]
+  "order": ["hero", "simple-text"]
 }
