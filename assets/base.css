@@ -151,3 +151,16 @@ img {
 .heading-1 .accent {
   color: #d9797a;
 }
+
+.heading-5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 128.2%;
+  text-transform: uppercase;
+
+  color: #081226;
+
+  margin: 0;
+}
