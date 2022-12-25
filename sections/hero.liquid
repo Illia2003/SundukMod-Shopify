@@ -1,49 +1,43 @@
 {% schema %}
-  {
-    "name": "Hero Block",
-    "tag": "section",
-    "class": "hero",
-    "templates": ["index"],
-    "settings": [
-      {
-        "type": "text",
-        "id": "title_line_1",
-        "label": "Title. First Line"
-      },
-      {
-        "type": "text",
-        "id": "title_line_2",
-        "label": "Title. Second Line"
-      },
-      {
-        "type": "text",
-        "id": "title_line_3",
-        "label": "Title. Third Line"
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "page",
-        "id": "button_page",
-        "label": "Button Url"
-      },
-      {
-        "type": "text",
-        "id": "button_text",
-        "label": "Button Text"
-      }
-    ]
-  }
+{
+  "name": "Hero Block",
+  "tag": "section",
+  "class": "hero",
+  "templates": ["index"],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_line_1",
+      "label": "Title. First Line"
+    },
+    {
+      "type": "text",
+      "id": "title_line_2",
+      "label": "Title. Second Line"
+    },
+    {
+      "type": "text",
+      "id": "title_line_3",
+      "label": "Title. Third Line"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "page",
+      "id": "button_page",
+      "label": "Button Url"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    }
+  ]
+}
 {% endschema %}
-
-{% capture button_data %}
-text : {{ section.settings.button_text }}, page : {{ section.settings.button_page }}
-{% endcapture %}
-
-{% assign button_data = button_data | split : ',' %}
 
 <link rel="stylesheet" href="{{ 'hero.css' | asset_url }}">
 
@@ -57,13 +51,12 @@ text : {{ section.settings.button_text }}, page : {{ section.settings.button_pag
           <span>{{ section.settings.title_line_3 }}</span>
         </h1>
         <div class="hero__button">
-          {{ button_data[0] }}
-          {% render "button-main-big" with button_data %}
+          {% render 'button-main-big' with {text: section.settings.button_text, url: section.settings.button_page} as settings %}
         </div>
       </div>
       <div class="hero__bottom">
         {% if section.settings.image %}
-        {{ section.settings.image | image_url: width: 3214 | image_tag }}
+          {{ section.settings.image | image_url: width: 3214 | image_tag }}
         {% endif %}
       </div>
     </div>
