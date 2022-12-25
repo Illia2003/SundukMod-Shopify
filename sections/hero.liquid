@@ -51,7 +51,7 @@
           <span>{{ section.settings.title_line_3 }}</span>
         </h1>
         <div class="hero__button">
-          {% render 'button-main-big' with {text: section.settings.button_text, url: section.settings.button_page} as settings %}
+          {% render 'button-main-big', text: section.settings.button_text, url: section.settings.button_page %}
         </div>
       </div>
       <div class="hero__bottom">
