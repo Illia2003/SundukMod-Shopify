@@ -60,6 +60,8 @@ a {
   left: 0px;
   right: 0px;
   bottom: 0px;
+
+  transition: all 0.3s linear;
 }
 
 .btn--main--big span {
@@ -70,9 +72,14 @@ a {
   line-height: 144.19%;
 
   color: #f2f2f2;
+
+  transition: all 0.3s linear;
 }
 
 .btn--main--big span::after {
+  content: "";
+  display: block;
+
   position: absolute;
 
   bottom: -4px;
