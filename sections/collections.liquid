@@ -17,12 +17,28 @@
 
 <div class="collections__wrapper">
 
-  <div class="collections__section">
-    <div class="collections__section-container section__container">
-      <div class="collections__section-wrapper section__wrapper">
-        {{ section.settings.collections }}
+  {% for collection in section.settings.collections %}
+    <div class="collections__section">
+      <div class="collections__section-container section__container">
+        <div class="collections__section-wrapper section__wrapper">
+          <h2 class="heading-2 collection__title">
+            {{ collection.title }}
+          </h2>
+          <div class="collection__image">
+            <div class="image-mask">
+              {% if collection.image %}
+                {{ collection.image | image_url: height: 846 | image_tag: loading: 'lazy', widths: "846, 360" }}
+              {% endif %}
+            </div>
+          </div>
+          <div class="collection__bottom">
+            <div class="collection__button">
+              {% render 'button-main-big', text: "Посмотреть категорию", url: collection.url %}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  {% endfor %}
 
 </div>
