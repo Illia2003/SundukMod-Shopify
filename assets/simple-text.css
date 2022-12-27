@@ -11,14 +11,8 @@
 }
 
 .simple-text .simple-text__image .image-mask {
-  -webkit-mask-image: url(./Mask.svg);
-  mask-image: url(./Mask.svg);
-
   -webkit-mask-size: 546px 546px;
   mask-size: 546px 546px;
-
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
 
   width: 546px;
   height: 546px;

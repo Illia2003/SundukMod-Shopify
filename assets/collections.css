@@ -1,3 +1,45 @@
 .collections .collections__section {
   flex: 0 0 100%;
+
+  height: 100vh;
+  width: 100%;
+}
+
+.collections .collections__section:nth-of-type(2n + 1) {
+  background-color: #081226;
+}
+
+.collections .collections__section:nth-of-type(2n) {
+  background-color: #d9797a;
+}
+
+.collections .collections__section:nth-of-type(2n) .btn--main--big {
+  background-color: #081226;
+}
+
+.collections .collection__image .image-mask {
+  -webkit-mask-size: 846px 846px;
+  mask-size: 846px 846px;
+
+  width: 846px;
+  height: 846px;
+
+  position: absolute;
+
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+
+  z-index: 0;
+}
+
+.collections .collection__title {
+  color: #fff;
+
+  z-index: 1;
+}
+
+.collections .collection__bottom {
+  z-index: 1;
 }

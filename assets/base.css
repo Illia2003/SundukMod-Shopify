@@ -135,6 +135,14 @@ img {
   object-fit: cover;
 }
 
+.image-mask {
+  -webkit-mask-image: url(./Mask.svg);
+  mask-image: url(./Mask.svg);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
 /************ Typography ***************/
 .heading-1 {
   font-family: "Playfair Display";
