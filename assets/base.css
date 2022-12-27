@@ -31,6 +31,10 @@ body {
   justify-content: space-between;
 }
 
+svg path {
+  fill: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -60,6 +64,8 @@ a {
   left: 0px;
   right: 0px;
   bottom: 0px;
+
+  fill: #d9797a;
 
   transition: all 0.3s linear;
 }
