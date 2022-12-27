@@ -1,4 +1,6 @@
 .collections .collections__section {
+  position: relative;
+
   flex: 0 0 100%;
 
   height: 100vh;
@@ -15,6 +17,12 @@
 
 .collections .collections__section:nth-of-type(2n) .btn--main--big {
   background-color: #081226;
+}
+
+.collections .collections__section-wrapper {
+  padding: 92px 0px;
+
+  height: 100%;
 }
 
 .collections .collection__image .image-mask {
