@@ -8,7 +8,7 @@
         "title_line_1": "Комфорт",
         "title_line_2": "для вашых",
         "title_line_3": "пузожителей",
-        "image": "shopify://shop_images/Rectangle_3.png",
+        "image": "shopify:\/\/shop_images\/Rectangle_3.png",
         "button_page": "#",
         "button_text": "Начать шопинг"
       }
@@ -17,21 +17,32 @@
       "type": "simple-text",
       "settings": {
         "text": "SundukMod — Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-        "image": "shopify://shop_images/Rectangle_6.jpg"
+        "image": "shopify:\/\/shop_images\/Rectangle_6.jpg"
       }
     },
     "collections": {
       "type": "collections",
       "settings": {
-        "collections": ["для-женщин", "для-больших-размеров", "для-беременных"]
+        "collections": [
+          "для-женщин",
+          "для-больших-размеров",
+          "для-беременных"
+        ]
       }
     },
     "collection_1": {
       "type": "collection",
       "settings": {
+        "title": "Уже подехали новинки",
+        "button_text": "",
         "collection": "уже-подехали-новинки"
       }
     }
   },
-  "order": ["hero", "simple-text", "collections", "collection_1"]
+  "order": [
+    "hero",
+    "simple-text",
+    "collections",
+    "collection_1"
+  ]
 }
