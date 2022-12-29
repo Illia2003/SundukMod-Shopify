@@ -1,42 +1,41 @@
 {% schema %}
-{
-  "name": "Hero Block",
-  "tag": "section",
-  "class": "hero section",
-  "templates": ["index"],
-  "settings": [
-    {
-      "type": "text",
-      "id": "title_line_1",
-      "label": "Title. First Line"
-    },
-    {
-      "type": "text",
-      "id": "title_line_2",
-      "label": "Title. Second Line"
-    },
-    {
-      "type": "text",
-      "id": "title_line_3",
-      "label": "Title. Third Line"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    },
-    {
-      "type": "page",
-      "id": "button_page",
-      "label": "Button Url"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text"
-    }
-  ]
-}
+  {
+    "name": "Hero Block",
+    "tag": "section",
+    "class": "hero section",
+    "templates": ["index"],
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title_line_1",
+        "label": "Title. First Line"
+      },
+      {
+        "type": "text",
+        "id": "title_line_2",
+        "label": "Title. Second Line"
+      },
+      {
+        "type": "text",
+        "id": "title_line_3",
+        "label": "Title. Third Line"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "page",
+        "id": "button_page",
+        "label": "Button Url"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+      }
+    ]
+  }
 {% endschema %}
 
 <link rel="stylesheet" href="{{ 'hero.css' | asset_url }}">
@@ -60,4 +59,3 @@
     </div>
   </div>
 </div>
-
