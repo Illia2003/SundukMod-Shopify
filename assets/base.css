@@ -47,6 +47,7 @@ a {
   text-transform: uppercase;
 
   transition: all 0.3s linear;
+  text-align: center;
 }
 
 .btn--main--big {
