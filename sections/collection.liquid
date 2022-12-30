@@ -32,6 +32,14 @@
       </h2>
       {% render 'button-main', text: section.settings.button_text, url: section.settings.collection.url %}
     </div>
-    <div class="collection__list"></div>
+    <div class="collection__list">
+
+      {% render 'product-card', product: section.settings.collection.products[0], class: "product-card--featured" %}
+
+      {% for product in section.settings.collection.products offset: 1 %}
+        {% render 'product-card', product: product, class: "" %}
+      {% endfor %}
+
+    </div>
   </div>
 </div>

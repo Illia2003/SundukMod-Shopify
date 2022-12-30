@@ -1,0 +1,16 @@
+<div class="product-card collection__product {{ class }}">
+  <a href="{{ product.url }}">
+    <div clas="product-card__image">
+      {{ product.featured_image | image_url: width: 388, height: 572 | image_tag: width: 388, height: 572, loading: 'lazy', widths: "388, 360" }}
+    </div>
+
+    <div class="product-card__content">
+      <h6 class="product-card__name heading-6">
+        {{ product.title }}
+      </h6>
+      <p class="product-card__price text--small">
+        {{ product.price }} грн
+      </p>
+    </div>
+  </a>
+</div>
