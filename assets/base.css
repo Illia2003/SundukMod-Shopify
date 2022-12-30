@@ -45,6 +45,8 @@ a {
   font-family: "Montserrat";
   font-style: normal;
   text-transform: uppercase;
+
+  transition: all 0.3s linear;
 }
 
 .btn--main--big {
@@ -96,6 +98,19 @@ a {
   background-color: #f2f2f2;
 
   transition: all 0.3s linear;
+}
+
+.btn--main {
+  display: block;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 144.19%;
+
+  color: #f2f2f2;
+  background-color: #d9797a;
+
+  padding: 36px 8px 38px;
 }
 
 .link {
