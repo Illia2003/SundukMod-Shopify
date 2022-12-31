@@ -9,7 +9,7 @@
         {{ product.title }}
       </h6>
       <p class="product-card__price text--small">
-        {{ product.price | money_without_trailing_zeros }}
+        {{ product.price | money_without_trailing_zeros | money_with_currency }}
       </p>
     </div>
   </a>
