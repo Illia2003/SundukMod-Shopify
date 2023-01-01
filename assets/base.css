@@ -198,7 +198,7 @@ img {
   line-height: 110.69%;
   text-transform: uppercase;
 
-  color: #000000;
+  color: #081226;
 }
 
 .heading-5 {
@@ -223,7 +223,7 @@ img {
 
   text-transform: uppercase;
 
-  color: #000000;
+  color: #081226;
 }
 
 .text--small {
@@ -234,7 +234,7 @@ img {
   line-height: 144.19%;
   /* identical to box height, or 26px */
 
-  color: #000000;
+  color: #081226;
 }
 
 .product-card .product-card__image {
@@ -256,4 +256,29 @@ img {
 
 .swiper .swiper-slide {
   flex: 0 0 440px;
+}
+
+.swiper .swiper-scrollbar {
+  position: relative;
+
+  height: 2px;
+
+  background-color: #081226;
+}
+
+.swiper .swiper-scrollbar {
+  position: relative;
+
+  height: 2px;
+
+  background-color: #081226;
+}
+
+.swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  width: 60px;
+  height: 60px;
+
+  background-image: url(./Mask.svg);
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
 }
