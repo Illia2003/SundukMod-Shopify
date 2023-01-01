@@ -241,8 +241,6 @@ img {
 
 /* Swiper */
 .swiper .swiper-wrapper {
-  overflow: hidden;
-
   display: flex;
   align-items: flex-start;
   justify-items: flex-start;
