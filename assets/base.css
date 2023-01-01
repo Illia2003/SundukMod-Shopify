@@ -228,3 +228,11 @@ img {
 
   color: #000000;
 }
+
+.product-card .product-card__image {
+  margin-bottom: 12px;
+}
+
+.product-card .product-card__image img {
+  display: block;
+}
