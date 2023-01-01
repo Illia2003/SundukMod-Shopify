@@ -23,6 +23,14 @@ body {
   width: 100%;
 }
 
+.section--margin .section__wrapper {
+  padding-top: 136px;
+}
+
+.section--margin:last-of-type .section__wrapper {
+  padding-bottom: 136px;
+}
+
 .section__wrapper--column {
   flex-direction: column;
 }
