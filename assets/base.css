@@ -264,14 +264,8 @@ img {
   height: 2px;
 
   background-color: #081226;
-}
 
-.swiper .swiper-scrollbar {
-  position: relative;
-
-  height: 2px;
-
-  background-color: #081226;
+  margin-top: 92px;
 }
 
 .swiper .swiper-scrollbar .swiper-scrollbar-drag {
@@ -279,7 +273,7 @@ img {
   height: 60px;
 
   position: absolute;
-  top: 50px;
+  top: -29px;
 
   background-image: url(./Mask.svg);
   background-repeat: no-repeat;
