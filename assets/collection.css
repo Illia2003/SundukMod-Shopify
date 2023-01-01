@@ -6,3 +6,7 @@
 
   height: 572px;
 }
+
+.collection-block .collection__top .btn--main {
+  width: 100%;
+}
