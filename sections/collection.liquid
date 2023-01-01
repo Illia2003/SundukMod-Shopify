@@ -34,9 +34,12 @@
           </h2>
           {% render 'button-main', text: section.settings.button_text, url: section.settings.collection.url %}
         </div>
+
         {% for product in section.settings.collection.products %}
           {% render 'product-card', product: product, class: "swiper-slide" %}
         {% endfor %}
+
+        <div class="swiper-slide"></div>
       </div>
 
       <div class="swiper-scrollbar"></div>
