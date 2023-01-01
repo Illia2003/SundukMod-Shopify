@@ -236,3 +236,16 @@ img {
 .product-card .product-card__image img {
   display: block;
 }
+
+/* Swiper */
+.swiper .swiper-wrapper {
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+.swiper .swiper-slide {
+  flex: 0 0 440px;
+}
