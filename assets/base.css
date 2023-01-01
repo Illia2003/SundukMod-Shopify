@@ -235,6 +235,8 @@ img {
 
 .product-card .product-card__image img {
   display: block;
+
+  width: 100%;
 }
 
 /* Swiper */
