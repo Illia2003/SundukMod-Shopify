@@ -1,12 +1,18 @@
-.collection-block .collection__swiper .collection__top {
+.collection-block .collection__top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 
   height: 572px;
+
+  margin-right: 40px;
 }
 
 .collection-block .collection__top .btn--main {
   width: 100%;
+}
+
+.collection-block .collection__swiper {
+  background-color: #f2f2f2;
 }
