@@ -12,5 +12,10 @@ if (document.querySelector(".collection__swiper")) {
       dragSize: 60,
       snapOnRelease: true,
     },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 }
