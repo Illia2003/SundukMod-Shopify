@@ -13,6 +13,6 @@
   width: 100%;
 }
 
-.collection-block .collection__swiper {
+.collection-block .collection__swiper .swiper-wrapper {
   background-color: #f2f2f2;
 }
