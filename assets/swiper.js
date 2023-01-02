@@ -10,6 +10,7 @@ if (document.querySelector(".collection__swiper")) {
       el: ".swiper-scrollbar",
       draggable: true,
       dragSize: 60,
+      snapOnRelease: true,
     },
   });
 }
