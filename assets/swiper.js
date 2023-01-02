@@ -6,6 +6,12 @@ if (document.querySelector(".collection__swiper")) {
     loop: false,
     slidesPerView: "auto",
 
+    on: {
+      init: (swiper) => {
+        console.log(swiper);
+      },
+    },
+
     scrollbar: {
       el: ".swiper-scrollbar",
       draggable: true,
