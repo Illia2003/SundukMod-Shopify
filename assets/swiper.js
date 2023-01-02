@@ -9,6 +9,7 @@ if (document.querySelector(".collection__swiper")) {
     scrollbar: {
       el: ".swiper-scrollbar",
       draggable: true,
+      dragSize: 60,
     },
   });
 }
