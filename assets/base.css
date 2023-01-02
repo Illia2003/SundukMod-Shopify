@@ -278,9 +278,7 @@ img {
   position: absolute;
   top: -29px;
 
-  background-image: url(./Mask.svg);
+  background-image: url(./scrollbar.svg);
   background-repeat: no-repeat;
   background-size: 60px 60px;
-
-  transform: rotate(60deg);
 }
