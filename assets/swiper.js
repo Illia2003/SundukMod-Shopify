@@ -11,7 +11,7 @@ if (document.querySelector(".collection__swiper")) {
         const swiperElement = swiper.el;
 
         swiperElement.querySelector(
-          ".swiper-pagination .swiper-pagination-end"
+          ".swiper-pagination .swiper-pagination-end h5"
         ).textContent =
           swiper.slides.length - 1 < 10
             ? `0${swiper.slides.length - 1}`
