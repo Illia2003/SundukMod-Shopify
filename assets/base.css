@@ -281,4 +281,6 @@ img {
   background-image: url(./Mask.svg);
   background-repeat: no-repeat;
   background-size: 60px 60px;
+
+  transform: rotate(28.5deg);
 }
