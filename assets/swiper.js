@@ -4,7 +4,7 @@ if (document.querySelector(".collection__swiper")) {
   const collectionSwiper = new Swiper(".collection__swiper", {
     spaceBetween: 40,
     loop: false,
-    slidesPerView: 3,
+    slidesPerView: "auto",
 
     scrollbar: {
       el: ".swiper-scrollbar",
