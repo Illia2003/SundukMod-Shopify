@@ -1,3 +1,7 @@
+.collection-block .collection__swiper {
+  width: 100%;
+}
+
 .collection-block .collection__swiper .collection__top {
   display: flex;
   flex-direction: column;
