@@ -282,3 +282,13 @@ img {
   background-repeat: no-repeat;
   background-size: 60px 60px;
 }
+
+.swiper .swiper-pagination {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
