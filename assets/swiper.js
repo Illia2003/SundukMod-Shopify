@@ -13,9 +13,9 @@ if (document.querySelector(".collection__swiper")) {
         swiperElement.querySelector(
           ".swiper-pagination .swiper-pagination-end h5"
         ).textContent =
-          swiper.slides.length - 1 < 10
-            ? `0${swiper.slides.length - 1}`
-            : swiper.slides.length - 1;
+          swiper.slides.length < 10
+            ? `0${swiper.slides.length}`
+            : swiper.slides.length;
       },
     },
 
