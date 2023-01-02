@@ -8,7 +8,14 @@ if (document.querySelector(".collection__swiper")) {
 
     on: {
       init: (swiper) => {
-        console.log(swiper);
+        const swiperElement = swiper.el;
+
+        swiperElement.querySelector(
+          ".swiper-pagination .swiper-pagination-end"
+        ).textContent =
+          swiper.slides.length - 1 < 10
+            ? `0${swiper.slides.length - 1}`
+            : swiper.slides.length - 1;
       },
     },
 
