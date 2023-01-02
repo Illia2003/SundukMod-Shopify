@@ -26,14 +26,14 @@
 
 <div class="collection__container section__container">
   <div class="collection__wrapper section__wrapper">
-    <div class="collection__top">
-      <h2 class="heading-2 section__title">
-        {{ section.settings.title }}
-      </h2>
-      {% render 'button-main', text: section.settings.button_text, url: section.settings.collection.url %}
-    </div>
     <div class="collection__swiper swiper">
       <div class="swiper-wrapper">
+        <div class="collection__top swiper-slide">
+          <h2 class="heading-2 section__title">
+            {{ section.settings.title }}
+          </h2>
+          {% render 'button-main', text: section.settings.button_text, url: section.settings.collection.url %}
+        </div>
 
         {% for product in section.settings.collection.products %}
           {% render 'product-card', product: product, class: "swiper-slide" %}
