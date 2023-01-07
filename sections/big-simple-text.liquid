@@ -1,0 +1,37 @@
+{% schema %}
+  {
+    "name": "Big Simple Text Block",
+    "tag": "section",
+    "class": "big-simple-text section",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+<link href="{{ 'big-simple-text.css' | asset_url }}" rel="stylesheet">
+
+<div class="simple-text__container section__container">
+  <div class="simple-text__wrapper section__wrapper">
+    <div class="simple-text__image">
+      <div class="image-mask">
+        {% if section.settings.image %}
+          {{ section.settings.image | image_url: height: 546 | image_tag: loading: 'lazy', widths: "546, 360" }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="simple-text__content">
+      <h2 class="heading-1">
+        {{ section.settings.text }}
+      </h2>
+    </div>
+  </div>
+</div>
