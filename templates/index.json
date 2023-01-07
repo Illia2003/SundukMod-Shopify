@@ -30,7 +30,7 @@
       "type": "collection",
       "settings": {
         "title": "Уже подехали новинки",
-        "button_text": "",
+        "button_text": "Посмотреть все новинки",
         "collection": "уже-подехали-новинки"
       }
     },
