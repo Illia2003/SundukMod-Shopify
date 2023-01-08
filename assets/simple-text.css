@@ -7,7 +7,7 @@
 
   flex-shrink: 0;
 
-  width: 546px;
+  width: 440px;
 }
 
 .simple-text .simple-text__image .image-mask {
@@ -24,7 +24,7 @@
 }
 
 .simple-text .simple-text__content {
-  margin-left: 24px;
+  margin-left: 40px;
 }
 
 .simple-text .simple-text__content .heading-5 {
