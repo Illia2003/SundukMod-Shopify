@@ -1,0 +1,28 @@
+.big-simple-text .big-simple-text__wrapper {
+  padding: 138px 0px;
+}
+
+.big-simple-text .big-simple-text__image {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 662px;
+}
+
+.big-simple-text .big-simple-text__image .image-mask {
+  -webkit-mask-size: 662px 662px;
+  mask-size: 662px 662px;
+
+  width: 662px;
+  height: 662px;
+
+  position: absolute;
+
+  top: -182px;
+  left: -64px;
+}
+
+.big-simple-text .big-simple-text__content {
+  margin-left: 24px;
+}
