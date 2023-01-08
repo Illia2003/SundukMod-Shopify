@@ -40,6 +40,14 @@
         "text": "SundukMod качественная одежда по доступной цене",
         "image": "shopify://shop_images/Rectangle_6.jpg"
       }
+    },
+    "collection_2": {
+      "type": "collection",
+      "settings": {
+        "title": "Сейчас в тренде",
+        "button_text": "Посмотреть все товары",
+        "collection": "популярные-товары"
+      }
     }
   },
   "order": [
