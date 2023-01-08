@@ -8,6 +8,8 @@
   flex-shrink: 0;
 
   width: 440px;
+
+  z-index: 0;
 }
 
 .big-simple-text .big-simple-text__image .image-mask {
@@ -25,4 +27,5 @@
 
 .big-simple-text .big-simple-text__content {
   margin-left: 40px;
+  z-index: 1;
 }
