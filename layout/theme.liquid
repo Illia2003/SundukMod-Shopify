@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="{{ 'normalize.css' | asset_url }}">
 
     {{ content_for_header }}
-  </head>
+    {% render 'judgeme_core' %}
+</head>
   <body>
     {% section "header" %}
 
