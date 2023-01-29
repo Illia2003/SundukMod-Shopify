@@ -1,0 +1,64 @@
+{% schema %}
+  {
+    "name": "Reviews Block",
+    "tag": "section",
+    "class": "reviews section section--margin",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "page",
+        "id": "button_page",
+        "label": "Button Url"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Reviews Block",
+        "settings": {
+          "title": "Щасливі відгуки наших покупців",
+          "button_text": "Переглянути всі відгуки"
+        }
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}
+
+<link rel="stylesheet" href="{{ 'reviews.css' | asset_url }}">
+
+<div class="reviews__container section__container">
+  <div class="reviews__wrapper section__wrapper">
+    <div class="reviews__image">
+      <div class="image-mask">
+        {% if section.settings.image %}
+          {{ section.settings.image | image_url: height: 588 | image_tag: loading: 'lazy', widths: "588, 360" }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="reviews__content">
+      <h2 class="reviews__title section__title heading-2">
+        {{ section.settings.title }}
+      </h2>
+      <div class="reviews__list">
+        Reviews
+      </div>
+      <div class="reviews__bottom">
+        {% render 'button-secondary', text: section.settings.button_text, url: section.settings.button_page %}
+      </div>
+    </div>
+
+  </div>
+</div>
