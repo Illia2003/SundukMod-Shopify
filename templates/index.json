@@ -48,6 +48,13 @@
         "button_text": "Посмотреть все товары",
         "collection": "популярные-товары"
       }
+    },
+    "reviews": {
+      "type": "reviews",
+      "settings": {
+        "title": "Щасливі відгуки наших покупців",
+        "button_text": "Переглянути всі відгуки"
+      }
     }
   },
   "order": [
@@ -56,6 +63,7 @@
     "collections",
     "collection_1",
     "big-simple-text",
-    "collection_2"
+    "collection_2",
+    "reviews"
   ]
 }
