@@ -9,7 +9,20 @@
 body {
   background-color: #f2f2f2;
   min-width: 360px;
-  font-family: Montserrat;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 144.19%;
+}
+
+p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 144.19%;
 }
 
 .section__container {
@@ -54,8 +67,16 @@ a {
   font-style: normal;
   text-transform: uppercase;
 
+  display: block;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 144.19%;
+
   transition: all 0.3s linear;
   text-align: center;
+
+  cursor: pointer;
 }
 
 .btn--main--big {
@@ -110,14 +131,19 @@ a {
 }
 
 .btn--main {
-  display: block;
-
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 144.19%;
-
   color: #f2f2f2;
   background-color: #d9797a;
+
+  border: 1px solid #d9797a;
+
+  padding: 36px 8px 38px;
+}
+
+.btn--secondary {
+  color: #081226;
+  background-color: transparent;
+
+  border: 1px solid #081226;
 
   padding: 36px 8px 38px;
 }
@@ -292,4 +318,8 @@ img {
 
   margin-top: 30px;
   padding: 0px 12px;
+}
+
+.section .section__title {
+  margin-bottom: 56px;
 }
