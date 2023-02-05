@@ -52,6 +52,10 @@ p {
   justify-content: space-between;
 }
 
+.section__wrapper--align--center {
+  align-items: center;
+}
+
 svg path {
   fill: inherit;
 }
@@ -221,6 +225,17 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 76px;
+  line-height: 110.69%;
+  text-transform: uppercase;
+
+  color: #081226;
+}
+
+.heading-3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
   line-height: 110.69%;
   text-transform: uppercase;
 

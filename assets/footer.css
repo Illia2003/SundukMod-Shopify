@@ -1,0 +1,130 @@
+.footer {
+  background-color: #081226;
+}
+
+.footer * {
+  color: #f2f2f2;
+}
+
+.footer .footer__wrapper {
+  padding: 40px 0px;
+}
+
+.footer .footer__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin-bottom: 112px;
+}
+
+.footer .footer__top .footer__left {
+  flex: 1 0 244px;
+  margin-right: 183px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer .footer__top .footer__logo {
+  margin-bottom: 32px;
+}
+
+.footer .footer__top .social-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer .social-media .social-media__item + .social-media__item {
+  margin-left: 20px;
+}
+
+.footer .social-media .social-media__item .social-media__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #f2f2f2;
+  border-radius: 100%;
+}
+
+.footer .social-media svg {
+  fill: #f2f2f2;
+}
+
+.footer .footer__top .footer__right {
+  flex: 1 0 813px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer .footer__right .footer__contact {
+  width: 100%;
+
+  margin-bottom: 40px;
+}
+
+.footer .footer__contact .footer__phone-number {
+  margin-bottom: 16px;
+}
+
+.footer .footer__right .footer__additional-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer .footer__additional-info .info__block {
+  flex: 1 1 386px;
+}
+
+.footer .footer__additional-info .info__block + .info__block {
+  margin-left: 40px;
+}
+
+.footer .footer__additional-info .block__title {
+  margin-bottom: 24px;
+}
+
+.footer .footer__additional-info .block__sub + .block__sub {
+  margin-top: 16px;
+}
+
+.footer .footer__additional-info .block__sub .sub__title {
+  text-transform: uppercase;
+
+  margin-bottom: 8px;
+}
+
+.footer .footer__menu .menu__item + .menu__item {
+  margin-top: 16px;
+}
+
+.footer .footer__menu .link::after {
+  background-color: #f2f2f2;
+}
+
+.footer .footer__bottom {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .footer__bottom .footer__creator a {
+  text-decoration: underline;
+}

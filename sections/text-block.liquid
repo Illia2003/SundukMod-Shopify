@@ -1,0 +1,62 @@
+{% schema %}
+  {
+    "name": "Text Block",
+    "tag": "section",
+    "class": "text-block section section--margin",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "page",
+        "id": "button_page",
+        "label": "Button Url"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+      }
+    ]
+  }
+{% endschema %}
+
+<link href="{{ 'text-block.css' | asset_url }}" rel="stylesheet">
+
+<div class="text-block__container section__container">
+  <div class="text-block__wrapper section__wrapper section__wrapper--align--center">
+    <div class="text-block__left">
+      <h2 class="heading-2 section__title">
+        {{ section.settings.title }}
+      </h2>
+      <div class="text-block__content">
+        <p>
+          {{ section.settings.text }}
+        </p>
+      </div>
+    </div>
+    <div class="text-block__right">
+      <div class="text-block__image">
+        <div class="image-mask">
+          {% if section.settings.image %}
+            {{ section.settings.image | image_url: height: 529 | image_tag: loading: 'lazy', widths: "529, 360" }}
+          {% endif %}
+        </div>
+      </div>
+      <div class="text-block__button">
+        {% render 'button-secondary', text: section.settings.button_text, url: section.settings.button_page %}
+      </div>
+    </div>
+  </div>
+</div>

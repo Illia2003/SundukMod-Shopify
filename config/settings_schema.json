@@ -4,7 +4,7 @@
     "theme_name": "SundukMod",
     "theme_version": "1.0.0",
     "theme_author": "Illia Humeniuk (Epiphany)",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_email": "ilia.gumeniuk2018@gmail.com"
   },
   {
@@ -21,6 +21,21 @@
         "id": "secondary_font",
         "label": "Secondary Font",
         "default": "montserrat_n4"
+      }
+    ]
+  },
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook"
       }
     ]
   }
