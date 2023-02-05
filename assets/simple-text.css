@@ -5,9 +5,9 @@
 .simple-text .simple-text__image {
   position: relative;
 
-  flex-shrink: 0;
+  flex: 0 1 387px;
 
-  width: 440px;
+  z-index: 0;
 }
 
 .simple-text .simple-text__image .image-mask {
@@ -24,13 +24,15 @@
 }
 
 .simple-text .simple-text__content {
+  flex: 0 1 814px;
+
   margin-left: 40px;
+
+  z-index: 1;
 }
 
 .simple-text .simple-text__content .heading-5 {
   text-transform: uppercase;
-
-  flex-shrink: 1;
 
   text-indent: 122px;
 }

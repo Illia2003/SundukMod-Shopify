@@ -6,16 +6,16 @@
 .hero .hero__top {
   position: relative;
 
-  max-width: 1400px;
+  max-width: 1320px;
   width: 100%;
   padding: 0 40px;
   margin: 0 auto;
   margin-bottom: 18px;
 
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .hero .hero__top .hero__button {
@@ -28,6 +28,8 @@
 .hero .section__title {
   text-align: right;
   margin-bottom: 0px;
+
+  flex: 0 1 813px;
 }
 
 .hero .section__title span {

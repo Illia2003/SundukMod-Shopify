@@ -5,9 +5,7 @@
 .big-simple-text .big-simple-text__image {
   position: relative;
 
-  flex-shrink: 0;
-
-  width: 440px;
+  flex: 0 1 387px;
 
   z-index: 0;
 }
@@ -27,5 +25,8 @@
 
 .big-simple-text .big-simple-text__content {
   margin-left: 40px;
+
+  flex: 0 1 814px;
+
   z-index: 1;
 }

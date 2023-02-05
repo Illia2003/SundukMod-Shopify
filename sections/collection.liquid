@@ -34,32 +34,21 @@
 <link rel="stylesheet" href="{{ 'collection.css' | asset_url }}">
 
 <div class="collection__container section__container">
-  <div class="collection__wrapper section__wrapper">
-    <div class="collection__swiper swiper">
-      <div class="swiper-wrapper">
-        <div class="collection__top swiper-slide">
-          <h2 class="heading-2 section__title">
-            {{ section.settings.title }}
-          </h2>
-          {% render 'button-main', text: section.settings.button_text, url: section.settings.collection.url %}
-        </div>
+  <div class="collection__wrapper section__wrapper section__wrapper--column ">
+    <div class="collection__top">
+      <h2 class="heading-2 section__title">
+        {{ section.settings.title }}
+      </h2>
+    </div>
 
-        {% for product in section.settings.collection.products %}
-          {% render 'product-card', product: product, class: "swiper-slide" %}
-        {% endfor %}
+    <div class="collection__products">
+      {% for product in section.settings.collection.products %}
+        {% render 'product-card', product: product, class: "collection__product" %}
+      {% endfor %}
+    </div>
 
-      </div>
-
-      <div class="swiper-scrollbar"></div>
-      <div class="swiper-pagination">
-        <div class="swiper-pagination-start">
-          <h5 class="heading-5">01</h5>
-        </div>
-        <div class="swiper-pagination-end">
-          <h5 class="heading-5"></h5>
-        </div>
-      </div>
-
+    <div class="collection__bottom">
+      {% render 'button-main', text: section.settings.button_text, url: section.settings.collection.url %}
     </div>
   </div>
 </div>
