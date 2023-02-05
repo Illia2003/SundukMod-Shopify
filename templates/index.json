@@ -8,7 +8,7 @@
         "title_line_1": "Комфорт",
         "title_line_2": "для вашых",
         "title_line_3": "пузожителей",
-        "image": "shopify://shop_images/Rectangle_3.png",
+        "image": "shopify:\/\/shop_images\/Rectangle_3.png",
         "button_page": "#",
         "button_text": "Начать шопинг"
       }
@@ -17,13 +17,17 @@
       "type": "simple-text",
       "settings": {
         "text": "SundukMod — Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-        "image": "shopify://shop_images/Rectangle_6.jpg"
+        "image": "shopify:\/\/shop_images\/Rectangle_6.jpg"
       }
     },
     "collections": {
       "type": "collections",
       "settings": {
-        "collections": ["для-женщин", "для-больших-размеров", "для-беременных"]
+        "collections": [
+          "для-женщин",
+          "для-больших-размеров",
+          "для-беременных"
+        ]
       }
     },
     "collection_1": {
@@ -38,7 +42,7 @@
       "type": "big-simple-text",
       "settings": {
         "text": "SundukMod качественная одежда по доступной цене",
-        "image": "shopify://shop_images/Rectangle_6.jpg"
+        "image": "shopify:\/\/shop_images\/Rectangle_6.jpg"
       }
     },
     "collection_2": {
@@ -53,7 +57,9 @@
       "type": "reviews",
       "settings": {
         "title": "Щасливі відгуки наших покупців",
-        "button_text": "Переглянути всі відгуки"
+        "button_page": "",
+        "button_text": "Переглянути всі відгуки",
+        "image": "shopify:\/\/shop_images\/Rectangle_6_860145dd-8d2f-477a-a570-ce9075249209.jpg"
       }
     },
     "about-us": {
@@ -61,6 +67,7 @@
       "settings": {
         "title": "SundukMod — синонім до “якість” і “Стиль”",
         "text": "SundukMod був створений у 2015 році. Саме тоді ми стали частинкою стрімко зростаючої індустрії дизайну та виробництва українського одягу. Ми зрозуміли, що важливо поєднати в наших моделях практичність з витонченістю та оригінальністю.",
+        "button_page": "",
         "button_text": "Дізнатися більше про нас"
       }
     }
