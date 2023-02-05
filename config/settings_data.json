@@ -16,6 +16,13 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "footer_logo": "shopify:\/\/shop_images\/Logo_daf926e2-1bed-4ca0-a9f0-34941b334095.png",
+          "phone_number": "+380 (97) 521 08 04",
+          "email": "INFO@SUNDUKMOD.UA",
+          "menu_pages": "footer",
+          "address": "місто Хмельницький,<br>\nвулиця Львівське шосе,<br>\n53\/1",
+          "schedule": "Пн. - Нд. з 9<sup>00<\/sup> до 23<sup>00<\/sup>",
+          "payment_methods": "shopify:\/\/shop_images\/Banks.png"
         }
       }
     },
