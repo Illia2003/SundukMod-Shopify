@@ -27,6 +27,7 @@
 
 .hero .section__title {
   text-align: right;
+  margin-bottom: 0px;
 }
 
 .hero .section__title span {
