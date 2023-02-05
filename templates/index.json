@@ -49,7 +49,7 @@
         "collection": "популярные-товары"
       }
     },
-    "review": {
+    "reviews": {
       "type": "reviews",
       "settings": {
         "title": "Щасливі відгуки наших покупців",
