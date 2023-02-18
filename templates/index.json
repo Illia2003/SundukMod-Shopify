@@ -5,12 +5,12 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "title_line_1": "Комфорт",
-        "title_line_2": "для вашых",
-        "title_line_3": "пузожителей",
-        "image": "shopify:\/\/shop_images\/Rectangle_3.png",
+        "title_line_1": "SundukMod",
+        "title_line_2": "твій комфорт",
+        "title_line_3": "у деталях",
+        "image": "shopify:\/\/shop_images\/Rectangle_3_6b560460-0fc9-406f-a360-29f9cb5aa52a.png",
         "button_page": "#",
-        "button_text": "Начать шопинг"
+        "button_text": "Почати шопінг"
       }
     },
     "simple-text": {
