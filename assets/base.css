@@ -108,7 +108,14 @@ a {
   transition: all 0.3s linear;
 }
 
-.btn--main--big span {
+.btn--main--big .animation {
+  display: inline-block;
+
+  overflow: hidden;
+  padding-bottom: 6px;
+}
+
+.btn--main--big .btn__text {
   position: relative;
 
   font-weight: 600;
@@ -117,10 +124,12 @@ a {
 
   color: #f2f2f2;
 
+  display: inline-block;
+
   transition: all 0.3s linear;
 }
 
-.btn--main--big span::after {
+.btn--main--big .btn__text::after {
   content: "";
   display: block;
 

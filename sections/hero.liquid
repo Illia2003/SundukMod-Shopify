@@ -44,9 +44,15 @@
   <div class="hero__wrapper section__wrapper section__wrapper--column">
     <div class="hero__top">
       <h1 class="heading-1 section__title">
-        <span>{{ section.settings.title_line_1 }}</span>
-        <span class="accent">{{ section.settings.title_line_2 }}</span>
-        <span>{{ section.settings.title_line_3 }}</span>
+        <span>
+          <span class="animation">{{ section.settings.title_line_1 }}</span>
+        </span>
+        <span class="accent">
+          <span class="animation">{{ section.settings.title_line_2 }}</span>
+        </span>
+        <span>
+          <span class="animation">{{ section.settings.title_line_3 }}</span>
+        </span>
       </h1>
       <div class="hero__button">
         {% render 'button-main-big', text: section.settings.button_text, url: section.settings.button_page %}
@@ -59,3 +65,5 @@
     </div>
   </div>
 </div>
+
+<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
