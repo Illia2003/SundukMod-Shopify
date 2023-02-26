@@ -1,0 +1,63 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: #081226;
+
+  z-index: 999;
+}
+
+.preloader .preloader__body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.preloader .preloader__figure {
+  position: absolute;
+
+  display: inline-block;
+  transform: translateY(-100%);
+}
+
+.preloader .preloader__figure svg {
+  display: block;
+
+  height: auto;
+}
+
+.preloader .preloader__figure.preloader__figure--first svg {
+  width: calc(100vw * 0.3986);
+}
+
+.preloader .preloader__figure.preloader__figure--second svg {
+  width: calc(100vw * 0.268);
+}
+
+.preloader .preloader__figure.preloader__figure--third svg {
+  width: calc(100vw * 0.2889);
+}
+
+.preloader .preloader__figure.preloader__figure--fourth svg {
+  width: calc(100vw * 0.35);
+}
+
+.preloader .preloader__figure.preloader__figure--fifth svg {
+  width: calc(100vw * 0.275);
+}
+
+.preloader .preloader__figure.preloader__figure--sixth svg,
+.preloader .preloader__figure.preloader__figure--seventh svg {
+  width: calc(100vw * 0.2972);
+}
+
+.preloader .preloader__figure.preloader__figure--eighth svg {
+  width: calc(100vw * 0.4069);
+}
+
+.preloader .preloader__figure.preloader__figure--ninth svg {
+  width: calc(100vw * 0.3347);
+}
