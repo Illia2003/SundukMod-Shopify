@@ -10,6 +10,10 @@
   z-index: 999;
 }
 
+.preloader.hide {
+  display: none;
+}
+
 .preloader .preloader__body {
   position: relative;
   width: 100%;

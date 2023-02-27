@@ -8,6 +8,7 @@
     <script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'MontionPath.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'gsap.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'animation.js' | asset_url }}" defer="defer"></script>
 
     {% style %}
 
@@ -37,11 +38,15 @@
   <body>
     {% section "preloader" %}
 
-    {% section "header" %}
+    <div class="smooth-scroller-wrapper" id="smooth-scroller-wrapper">
+      {% section "header" %}
 
-    {{ content_for_layout }}
+      <main class="smooth-scroller-content" id="smooth-scroller-content">
+        {{ content_for_layout }}
+      </main>
 
-    {% section "footer" %}
+      {% section "footer" %}
+    </div>
 
     <script
       defer
