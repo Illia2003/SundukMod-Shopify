@@ -280,6 +280,10 @@ preloaderTl.to(
 preloaderTl.set("#preloader", { className: "preloader hide" });
 
 preloaderTl.eventCallback("onComplete", () => {
+  var root = document.getElementsByTagName("html")[0];
+
+  root = root.classList.remove("noscroll");
+
   globalTl.play(0);
 });
 
