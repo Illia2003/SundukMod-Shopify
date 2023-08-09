@@ -2,7 +2,7 @@
   "wrapper": "div",
   "sections": {
     "banner": {
-      "type": "collection-banner"
+      "type": "collection-hero"
     }
   },
   "order": ["banner"]
