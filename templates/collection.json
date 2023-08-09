@@ -1,5 +1,9 @@
 {
   "wrapper": "div",
-  "sections": {},
-  "order": []
+  "sections": {
+    "banner": {
+      "type": "collection-banner"
+    }
+  },
+  "order": ["banner"]
 }
