@@ -1,26 +1,26 @@
-gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(ScrollTrigger);
-
 let globalTl = gsap.timeline({
   paused: true,
 });
 
-const body = document.body,
-  scrollWrap = document.getElementById("smooth-scroller-wrapper"),
-  height = scrollWrap.getBoundingClientRect().height - 1,
-  speed = 0.04;
+gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
-var offset = 0;
+const horizontalSections = gsap.utils.toArray(".horizontal-scroll");
 
-body.style.height = Math.floor(height) + "px";
+horizontalSections.forEach((section) => {
+  const innerSections = section.querySelectorAll(".collections__section");
 
-function smoothScroll() {
-  offset += (window.pageYOffset - offset) * speed;
-
-  var scroll = `translateY(-${offset}px) translateZ(0)`;
-  scrollWrap.style.transform = scroll;
-
-  callScroll = requestAnimationFrame(smoothScroll);
-}
-
-smoothScroll();
+  gsap.to(section, {
+    duration: 3,
+    x: -1 * window.innerWidth * (innerSections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: section,
+      start: "top top",
+      end: () => `+=${window.innerWidth * (innerSections.length - 1)}`,
+      scrub: true,
+      pin: true,
+      invalidateOnRefresh: true,
+    },
+  });
+});

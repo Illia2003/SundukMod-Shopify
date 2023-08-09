@@ -17,7 +17,6 @@ html.noscroll {
 body {
   background-color: #f2f2f2;
   min-width: 360px;
-  width: 100%;
 
   font-family: "Montserrat";
   font-style: normal;
@@ -25,20 +24,15 @@ body {
   font-size: 20px;
   line-height: 144.19%;
 
-  overflow: hidden;
-}
-
-.smooth-scroller-wrapper {
-  position: fixed;
-
-  left: 0;
-  top: 0;
-
-  overflow: hidden;
-}
-
-.smooth-scroller-content {
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
   width: 100%;
+  overscroll-behavior: none;
+}
+
+main {
+  padding-top: 83px;
 }
 
 p {
@@ -57,7 +51,6 @@ p {
 
 .section__wrapper {
   display: flex;
-  width: 100%;
 }
 
 .section--margin .section__wrapper {
@@ -128,13 +121,6 @@ a {
   fill: #d9797a;
 
   transition: all 0.3s linear;
-}
-
-.btn--main--big .animation {
-  display: inline-block;
-
-  overflow: hidden;
-  padding-bottom: 6px;
 }
 
 .btn--main--big .btn__text {

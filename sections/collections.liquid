@@ -2,7 +2,7 @@
   {
     "name": "Collections",
     "tag": "section",
-    "class": "collections section",
+    "class": "collections section horizontal-scroll",
     "settings": [
       {
         "type": "collection_list",
@@ -16,34 +16,32 @@
 
 <link href="{{ 'collections.css' | asset_url }}" rel="stylesheet">
 
-<div class="collections__scroll-container" id="collections__scroll-container">
-  <div class="collections__wrapper section__wrapper">
+<div class="collections__wrapper section__wrapper scroll-wrapper" data-scroll-section>
 
-    {% for collection in section.settings.collections %}
-      <div class="collections__section">
-        <div class="collections__section-container section__container">
-          <div class="collections__section-wrapper section__wrapper section__wrapper--column section__wrapper--justify--between">
-            <h2 class="heading-1 collection__title">
-              {{ collection.title }}
-            </h2>
-            <div class="collection__image">
-              <div class="image-mask">
-                {% if collection.image %}
-                  {{ collection.image | image_url: height: 846 | image_tag: loading: 'lazy', widths: "846, 360" }}
-                {% endif %}
-              </div>
+  {% for collection in section.settings.collections %}
+    <div class="collections__section">
+      <div class="collections__section-container section__container">
+        <div class="collections__section-wrapper section__wrapper section__wrapper--column section__wrapper--justify--between">
+          <h2 class="heading-1 collection__title">
+            {{ collection.title }}
+          </h2>
+          <div class="collection__image">
+            <div class="image-mask">
+              {% if collection.image %}
+                {{ collection.image | image_url: height: 846 | image_tag: loading: 'lazy', widths: "846, 360" }}
+              {% endif %}
             </div>
-            <div class="collection__bottom">
-              <div class="collection__button">
-                {% render 'button-main-big', text: "Посмотреть категорию", url: collection.url %}
-              </div>
+          </div>
+          <div class="collection__bottom">
+            <div class="collection__button">
+              {% render 'button-main-big', text: "Посмотреть категорию", url: collection.url %}
             </div>
           </div>
         </div>
       </div>
-    {% endfor %}
+    </div>
+  {% endfor %}
 
-  </div>
 </div>
 
 <script src="{{ 'collections.js' | asset_url }}" defer="defer"></script>

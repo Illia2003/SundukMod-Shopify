@@ -29,8 +29,8 @@
       }
     {% endstyle %}
 
-    <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'normalize.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">
 
     {{ content_for_header }}
     {% render 'judgeme_core' %}
@@ -38,15 +38,17 @@
   <body>
     {% section "preloader" %}
 
-    <div class="smooth-scroller-wrapper" id="smooth-scroller-wrapper">
-      {% section "header" %}
+    {% section "header" %}
 
-      <main class="smooth-scroller-content" id="smooth-scroller-content">
+    <main id="smooth-viewport">
+
+      <div id="smooth-content">
         {{ content_for_layout }}
-      </main>
 
-      {% section "footer" %}
-    </div>
+        {% section "footer" %}
+      </div>
+
+    </main>
 
     <script
       defer

@@ -1,7 +1,7 @@
 {% schema %}
   {
     "name": "Hero Block",
-    "tag": "section",
+
     "class": "hero section",
     "templates": ["index"],
     "limit": 1,
@@ -40,19 +40,13 @@
 
 <link rel="stylesheet" href="{{ 'hero.css' | asset_url }}">
 
-<div class="hero__container section__container hero__container--home">
+<div class="hero__container section__container hero__container--home" data-scroll>
   <div class="hero__wrapper section__wrapper section__wrapper--column">
     <div class="hero__top">
       <h1 class="heading-1 section__title">
-        <span>
-          <span class="animation">{{ section.settings.title_line_1 }}</span>
-        </span>
-        <span class="accent">
-          <span class="animation">{{ section.settings.title_line_2 }}</span>
-        </span>
-        <span>
-          <span class="animation">{{ section.settings.title_line_3 }}</span>
-        </span>
+        <span>{{ section.settings.title_line_1 }}</span>
+        <span class="accent">{{ section.settings.title_line_2 }}</span>
+        <span>{{ section.settings.title_line_3 }}</span>
       </h1>
       <div class="hero__button">
         {% render 'button-main-big', text: section.settings.button_text, url: section.settings.button_page %}
@@ -65,5 +59,3 @@
     </div>
   </div>
 </div>
-
-<script src="{{ 'hero.js' | asset_url }}" defer="defer"></script>
